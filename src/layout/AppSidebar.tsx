@@ -8,7 +8,8 @@ import {
   PageIcon
 } from "../icons";
 import { cn } from "../utils";
-
+import { IoLocation } from "react-icons/io5";
+import { IoLogoElectron } from "react-icons/io5";
 type NavItem = {
   name: string;
   key?: string;
@@ -36,23 +37,24 @@ const navItems: NavItem[] = [
       { name: "Vattenflöden", key: "vomb", path: "/vomb" },
       { name: "Vattenflöden", key: "ringsjon", path: "/ringsjon"} ],
   },
+  
   {
-    icon: <PageIcon></PageIcon>,
-    name: "asodk",
-    key: "elforbrukning",
-    subItems: [
-      { name: "bolmenWater", key: "bolmen", path: "/" },
-      { name: "vombWater", key: "vomb", path: "/" },
-      { name: "ringsjonWater", key: "ringsjon", path: "/"} ],
-  },
-  {
-    icon: <PageIcon></PageIcon>,
+    icon: <IoLocation></IoLocation>,
     name: "asodk",
     key: "kommuner",
     subItems: [
       { name: "kommuner", key: "kommunoversikt", path: "/kommuner" },
       { name: "kommuner", key: "malmo", path: "/malmo" },
       { name: "kommuner", key: "lund", path: "/lund" }],
+  },
+  {
+    icon: <IoLogoElectron/>,
+    name: "asodk",
+    key: "elforbrukning",
+    subItems: [
+      { name: "bolmenWater", key: "bolmen", path: "/" },
+      { name: "vombWater", key: "vomb", path: "/" },
+      { name: "ringsjonWater", key: "ringsjon", path: "/"} ],
   }
 ];
 
@@ -348,7 +350,7 @@ const AppSidebar: React.FC = () => {
               </h2>
               {renderMenuItems(navItems, "main")}
             </div>
-
+            {/* OTHERS ÄR BORTKOMMENTERADE
             <div>
               <h2
                 className={`mb-4 flex text-xs leading-5 text-gray-400 uppercase ${
@@ -364,7 +366,7 @@ const AppSidebar: React.FC = () => {
                 )}
               </h2>
               {renderMenuItems(othersItems, "others")}
-            </div>
+            </div>*/}
           </div>
         </nav>
 

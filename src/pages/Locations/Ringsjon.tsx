@@ -2,6 +2,7 @@ import LocationCard from '@/components/sydvattenKPI/LocationCard'
 import { locationById } from '@/data/locations'
 import LatestFlowCard from '@/components/sydvattenKPI/LatestFlowCard'
 import VattenNivaCard from '@/components/sydvattenKPI/VattenNivaCard'
+import { PieChartIcon } from '@/icons'
 
 const Ringsjon = () => {
   return (
@@ -12,7 +13,7 @@ const Ringsjon = () => {
                    <VattenNivaCard location ={locationById.ringsjon}/>
                
                    <LatestFlowCard location ={locationById.ringsjon} />
-               
+            
             </div></div>
     
   )
