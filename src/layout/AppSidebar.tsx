@@ -52,7 +52,7 @@ const navItems: NavItem[] = [
     name: "asodk",
     key: "elforbrukning",
     subItems: [
-      { name: "bolmenWater", key: "bolmen", path: "/" },
+      
       { name: "vombWater", key: "vomb", path: "/" },
       { name: "ringsjonWater", key: "ringsjon", path: "/"} ],
   }
