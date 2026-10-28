@@ -2,10 +2,12 @@ import React from 'react'
 import LocationCard from '@/components/sydvattenKPI/LocationCard'
 import { locationById } from '@/data/locations'
 import Label from '@/components/form/Label'
+import PageMeta from '@/components/TailAdminComponents/common/PageMeta'
 const Home = () => {
   return (
     
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:gap-6">
+      <PageMeta title="Översikt | Sydvatten" description="Översikt och startskärm" />
       <Label><h4 className="mt-2 text-title-sm font-bold text-gray-800 dark:text-white/90">Översikt</h4> </Label>
       
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
