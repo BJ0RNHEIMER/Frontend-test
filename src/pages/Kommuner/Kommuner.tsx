@@ -1,5 +1,5 @@
 import Label from '@/components/form/Label'
-import SkaneOverview from '@/components/sydvattenKPI/SkaneOverview'
+import SkaneOverview from '@/components/SydvattenKPI/SkaneOverview'
 import ComponentCard from '@/components/TailAdminComponents/common/ComponentCard'
 import PageMeta from '@/components/TailAdminComponents/common/PageMeta'
 
