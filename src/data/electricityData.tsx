@@ -1,4 +1,4 @@
-import type { ElectricityData } from "@/types/electricityData";
+import type { ElectricityData } from "@/types/ElectricityData";
 
 export const electricityDataById = {
   vombverket: {

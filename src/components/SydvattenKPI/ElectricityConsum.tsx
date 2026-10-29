@@ -23,12 +23,22 @@ export default function ElectricityConsumptionCard({ electricityData }: Electric
       </p>
 
       <p className="mt-3 text-sm font-medium text-gray-800 dark:text-white/90">
-         SnittElförbrukning: {electricityData.averageConsumption} kwh
+         Elförbrukning i snitt: {electricityData.averageConsumption} kwh
       </p>
 
-      <p className="mt-3 text-sm font-medium text-gray-800 dark:text-white/90">
-        Elförbrukning: {electricityData.lasthoursOfConsumption["00:00:00"]} kwh
-      </p>
+      <div className="mt-3">
+        <p className="text-sm font-medium text-gray-800 dark:text-white/90 mb-2">
+          Senaste elförbrukning:
+        </p>
+        <div className="max-h-32 overflow-y-auto space-y-1 pr-2">
+          {Object.entries(electricityData.lasthoursOfConsumption).map(([time, consumption]) => (
+            <div key={time} className="flex justify-between text-sm">
+              <span className="text-gray-500 dark:text-gray-400">Kl {time}</span>
+              <span className="font-medium text-gray-800 dark:text-white/90">{consumption} kWh</span>
+            </div>
+          ))}
+        </div>
+      </div>
 
       <Button
         className="mt-4"
