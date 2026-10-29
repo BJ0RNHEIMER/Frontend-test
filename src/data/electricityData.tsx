@@ -6,7 +6,7 @@ export const electricityDataById = {
     name: "Vombverket",
     description: "Vombverket är en vattenreningsanläggning i Skåne.",
     averageConsumption: 1158.76,
-    
+     
     lasthoursOfConsumption: {
       "00:00:00": 1712.4, 
       "01:00:00": 1708.56,

@@ -1,14 +1,14 @@
-import ElectricityPerRecievedWater from '@/components/SydvattenKPI/ElectricityPerRecievedWater'
+import ElectricityConsum from '@/components/SydvattenKPI/ElectricityConsum'
 import React from 'react'
-import { locationById } from '@/data/locations'
+import { electricityDataById } from '@/data/electricityData'
 
 const ElOverview = () => {
   return (
      <div className="grid grid-cols-3 gap-4 sm:grid-cols-3 md:gap-6">
           <div>
-            <ElectricityPerRecievedWater location={locationById.ringsjon} />
-            <ElectricityPerRecievedWater location={locationById.vomb} />
-            <ElectricityPerRecievedWater location={locationById.bolmen} />
+            <ElectricityConsum electricityData={electricityDataById.ringsjoverket} />
+            <ElectricityConsum electricityData={electricityDataById.ringsjoholmPump} />
+            <ElectricityConsum electricityData={electricityDataById.vombverket} />
 
           </div>
         
