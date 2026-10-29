@@ -13,7 +13,9 @@
     "groups": {
       "menu": "Meny",
       "support": "Support",
-      "others": "Fix och annat roligt"
+      "others": "Fix och annat roligt",
+      "elforbrukning": "Elförbrukning",
+      "el_oversikt": "Elöversikt"
     },
     "badges": {
       "new": "new",

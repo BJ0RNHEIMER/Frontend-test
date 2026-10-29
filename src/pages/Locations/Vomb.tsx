@@ -1,9 +1,9 @@
 import LocationCard from '@/components/sydvattenKPI/LocationCard'
 import { locationById } from '@/data/locations'
 import LineChartOne from '@/components/charts/line/LineChartOne'
-import LatestFlowCard from '@/components/sydvattenKPI/LatestFlowCard'
-import VattenNivaCard from '@/components/sydvattenKPI/VattenNivaCard'
-import ElectricityPerRecievedWater from '@/components/sydvattenKPI/ElectricityPerRecievedWater'
+import LatestFlowCard from '@/components/SydvattenKPI/LatestFlowCard'
+import VattenNivaCard from '@/components/SydvattenKPI/VattenNivaCard'
+import ElectricityPerRecievedWater from '@/components/SydvattenKPI/ElectricityPerRecievedWater'
 import ComponentCard from '@/components/TailAdminComponents/common/ComponentCard'
 import PageMeta from '@/components/TailAdminComponents/common/PageMeta'
 const Vomb = () => {
