@@ -22,6 +22,7 @@ import Ringsjon from "./pages/Locations/Ringsjon";
 import Kommuner from "./pages/Kommuner/Kommuner";
 import Malmo from "./pages/Kommuner/Malmo";
 import Lund from "./pages/Kommuner/Lund";
+import ElOverview from "./pages/Electricity/ElOverview";
 
 export default function App() {
   return (
@@ -43,6 +44,9 @@ export default function App() {
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
             <Route path="/blank" element={<Blank />} />
+
+            {/* Electricity Overview */}
+            <Route path="/elOverview" element={<ElOverview />} />
 
             {/* Forms */}
             <Route path="/form-elements" element={<FormElements />} />

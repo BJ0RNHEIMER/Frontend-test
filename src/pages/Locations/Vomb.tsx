@@ -1,23 +1,33 @@
 import LocationCard from '@/components/sydvattenKPI/LocationCard'
 import { locationById } from '@/data/locations'
-import LatestFlowCard from '@/components/sydvattenKPI/LatestFlowCard'
-import VattenNivaCard from '@/components/sydvattenKPI/VattenNivaCard'
-
+import LineChartOne from '@/components/charts/line/LineChartOne'
+import LatestFlowCard from '@/components/SydvattenKPI/LatestFlowCard'
+import VattenNivaCard from '@/components/SydvattenKPI/VattenNivaCard'
+import ElectricityPerRecievedWater from '@/components/SydvattenKPI/ElectricityPerRecievedWater'
+import ComponentCard from '@/components/TailAdminComponents/common/ComponentCard'
+import PageMeta from '@/components/TailAdminComponents/common/PageMeta'
 const Vomb = () => {
-  
+  const thisLocation = locationById.vomb
   return (
     <div className="grid grid-cols-1 gap-4 md:gap-6">
+      <PageMeta title="Vombsjön Översikt | Sydvatten" description="Översikt av Vombsjöns mätningar" />
       <h4 className="mt-2 text-title-sm font-bold text-gray-800 dark:text-white/90">Vomb</h4> 
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6">
       
-        <LocationCard location={locationById.vomb} />
-     
-        <VattenNivaCard location ={locationById.vomb}/>
+        <VattenNivaCard location ={thisLocation}/>
+        
+        <LatestFlowCard location ={thisLocation} />
     
-        <LatestFlowCard location ={locationById.vomb} />
-    
-      
+        <ElectricityPerRecievedWater location={thisLocation}/>
+
+        
     </div>
+    <ComponentCard title="Elförbruking">
+          <LineChartOne />
+          </ComponentCard>
+          <ComponentCard title="Vattenproduktion">
+          <LineChartOne />
+          </ComponentCard>
     </div>
   )
 }
