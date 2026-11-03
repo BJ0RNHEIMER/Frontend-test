@@ -60,6 +60,6 @@ for (const location of LOCATIONS) {
 
     await expect(card).toContainText(location.description);
     await expect(card).toContainText(`Vattenflöde: ${location.waterflow} m³/s`);
-    await expect(card).toContainText(`Vattennivå: ${location.waterlevel} meter över havet`);
+    await expect(card).toContainText(`Vattennivå: ${location.waterlevel} MöH`);
   });
 }

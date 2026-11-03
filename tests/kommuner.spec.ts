@@ -10,7 +10,7 @@ test('kommunsidan visar kartan och hover-texten', async ({ page }) => {
   await page.goto('/kommuner');
 
   await expect(
-    page.locator('label', { hasText: /^Översikt$/ })
+    page.getByRole('heading', { name: /^Översikt$/ })
   ).toBeVisible();
   await expect(
     page.getByText('Hovra över en kommun för att se data.')
