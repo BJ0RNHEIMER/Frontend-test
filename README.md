@@ -97,7 +97,7 @@ npx playwright install
 Run the three tests in Chromium:
 
 ```bash
-npx playwright test tests/kommuner.spec.ts --project=chromium
+npx playwright test tests/kommun-detalj.spec.ts --project=chromium
 ```
 
 The dev server starts automatically if it is not already running. If you already have `npm run dev` running, Playwright reuses that server.
